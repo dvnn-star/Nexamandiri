@@ -1,6 +1,7 @@
 <template>
   <main>
     <SectionsHeroSection />
+    <SectionsAboutSection />
   </main>
 </template>
 
