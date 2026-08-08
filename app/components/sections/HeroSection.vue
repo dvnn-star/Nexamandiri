@@ -6,7 +6,7 @@
       <img 
         src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2070" 
         alt="Nexa Mandiri Engineering Construction Placeholder" 
-        class="w-full h-full object-cover opacity-60"
+        class="w-full h-full object-cover "
         loading="eager"
       />
     </div>
@@ -14,10 +14,7 @@
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
       <div class="max-w-3xl hero-content opacity-0 translate-y-8">
         <!-- Subheading / Badge -->
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-300 text-sm font-medium mb-6">
-          <span class="w-2 h-2 rounded-full bg-blue-500"></span>
-          {{ content.company.name }}
-        </div>
+
 
         <!-- Headline -->
         <h1 class="text-4xl md:text-5xl lg:text-7xl font-bold text-white leading-tight mb-6 tracking-tight">
@@ -79,8 +76,7 @@ onMounted(() => {
       opacity: 1,
       y: 0,
       duration: 1.2,
-      ease: 'power3.out',
-      clearProps: 'all'
+      ease: 'power3.out'
     })
   }, heroSection.value)
 
