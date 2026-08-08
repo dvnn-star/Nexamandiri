@@ -6,6 +6,12 @@ export const content = {
     name: 'Nexa Mandiri Group',
     description: 'Nexa Mandiri Group is a company focused on innovation and solutions.',
   },
+  hero: {
+    headline: '[Company/Project Headline - Nexa Mandiri]',
+    description: '[Short supporting description about Nexa Mandiri services and expertise in engineering/construction.]',
+    primaryCta: 'Contact Us',
+    secondaryCta: 'View Projects'
+  },
   services: [
     {
       id: 'service-1',
