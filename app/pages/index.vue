@@ -2,6 +2,10 @@
   <main>
     <SectionsHeroSection />
     <SectionsAboutSection />
+    <SectionsWhySection />
+    <SectionsIndustriesSection />
+    <SectionsClientsSection />
+    <SectionsCtaSection />
   </main>
 </template>
 

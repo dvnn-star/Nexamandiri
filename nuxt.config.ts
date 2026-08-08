@@ -17,6 +17,10 @@ export default defineNuxtConfig({
     defaultLocale: 'id',
     strategy: 'prefix_except_default'
   },
+  tailwindcss: {
+    configPath: 'tailwind.config.ts',
+    cssPath: '~/assets/css/main.css',
+  },
   css: ['~/assets/css/main.css'],
   site: {
     url: process.env.NUXT_SITE_URL || 'http://localhost:3000',

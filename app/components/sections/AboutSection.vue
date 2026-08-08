@@ -4,11 +4,7 @@
       <div class="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
         <!-- Text Content -->
         <div class="lg:w-1/2 about-content opacity-0 translate-y-8">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-600 text-sm font-medium mb-6">
-            <span class="w-2 h-2 rounded-full bg-blue-600"></span>
-            {{ content.about.heading }}
-          </div>
-          
+     
           <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight mb-6">
             {{ content.about.subheading }}
           </h2>
@@ -49,14 +45,13 @@
             
             <!-- Decorative badge -->
             <div class="absolute bottom-0 left-0 bg-white p-6 rounded-tr-2xl z-20">
-              <div class="flex items-center gap-4">
+              <div class="flex items-center gap-2">
                 <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white">
                   <Building2Icon class="w-6 h-6" />
                 </div>
                 <div>
                   <p class="font-bold text-slate-900">Batam, Indonesia</p>
-                  <p class="text-sm text-slate-500">Headquarters</p>
-                </div>
+                </div>  
               </div>
             </div>
           </div>

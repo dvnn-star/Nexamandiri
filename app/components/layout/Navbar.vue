@@ -14,7 +14,6 @@
         <NuxtLinkLocale to="/services" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Services</NuxtLinkLocale>
         <NuxtLinkLocale to="/projects" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Projects</NuxtLinkLocale>
         <NuxtLinkLocale to="/insights" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Insights</NuxtLinkLocale>
-        <NuxtLinkLocale to="/contact" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Contact</NuxtLinkLocale>
         
         <!-- Language Switcher -->
         <div class="relative group">
@@ -39,6 +38,8 @@
             </div>
           </div>
         </div>
+
+        <NuxtLinkLocale to="/contact" class="px-6 py-2.5 bg-blue-600 text-white hover:bg-blue-700 rounded-lg font-semibold transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5 ml-4">Contact Us</NuxtLinkLocale>
       </nav>
 
       <!-- Mobile Menu Button -->
