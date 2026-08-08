@@ -3,7 +3,7 @@
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
       <!-- Logo / Company Name -->
       <NuxtLinkLocale to="/" class="text-xl font-bold flex items-center gap-2">
-        <span class="w-8 h-8 bg-blue-600 text-white flex items-center justify-center rounded-lg">N</span>
+        <NuxtImg src="/Logo.webp" alt="Nexa Mandiri Logo" class="h-8 w-auto" />
         {{ content.company.name }}
       </NuxtLinkLocale>
 
