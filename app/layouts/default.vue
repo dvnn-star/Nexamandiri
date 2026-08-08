@@ -2,7 +2,7 @@
   <div class="min-h-screen flex flex-col">
     <header class="border-b">
       <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-        <h1 class="text-xl font-bold">{{ $t('company.name', 'Nexa Mandiri') }}</h1>
+        <h1 class="text-xl font-bold">{{ content.company.name }}</h1>
         <nav class="space-x-4">
           <NuxtLinkLocale to="/">Home</NuxtLinkLocale>
           <NuxtLinkLocale to="/about">About</NuxtLinkLocale>
@@ -23,3 +23,8 @@
     </footer>
   </div>
 </template>
+
+<script setup lang="ts">
+import { useCompanyData } from '~/composables/useCompanyData'
+const { content } = useCompanyData()
+</script>
