@@ -4,7 +4,7 @@
     <div class="absolute inset-0 z-0">
       <div class="absolute inset-0 bg-gradient-to-r from-slate-900/90 to-slate-900/40 z-10"></div>
       <img 
-        src="https://images.unsplash.com/photo-1541888088320-bf1bce046fa6?q=80&w=2000&auto=format&fit=crop" 
+        src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2070" 
         alt="Nexa Mandiri Engineering Construction Placeholder" 
         class="w-full h-full object-cover opacity-60"
         loading="eager"
