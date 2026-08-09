@@ -2,6 +2,13 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: process.env.NODE_ENV === 'development' },
+  app: {
+    head: {
+      link: [
+        { rel: 'icon', type: 'image/webp', href: '/Logo.webp' }
+      ]
+    }
+  },
   modules: [
     'shadcn-nuxt',
     '@nuxt/image',

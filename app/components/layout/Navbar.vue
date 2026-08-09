@@ -11,9 +11,7 @@
       <nav class="hidden md:flex items-center space-x-8">
         <NuxtLinkLocale to="/" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Home</NuxtLinkLocale>
         <NuxtLinkLocale to="/about" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">About</NuxtLinkLocale>
-        <NuxtLinkLocale to="/services" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Services</NuxtLinkLocale>
         <NuxtLinkLocale to="/projects" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Projects</NuxtLinkLocale>
-        <NuxtLinkLocale to="/insights" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Insights</NuxtLinkLocale>
         
         <!-- Language Switcher -->
         <div class="relative group">

@@ -58,7 +58,7 @@ export const content = {
     ]
   },
   cta: {
-    headline: 'Siap membangun masa depan bersama?',
+    headline: 'Siap membangun proyek Anda selanjutnya?',
     statement: 'Hubungi kami untuk mendiskusikan kebutuhan proyek Anda dan temukan bagaimana kami dapat membantu.',
     button: 'Hubungi Kami'
   },
@@ -90,7 +90,7 @@ export const content = {
     heroSubtitle: 'Keahlian praktis untuk setiap tahap, dari perencanaan hingga pelaksanaan.',
     whoWeAre: {
       title: 'Siapa Kami',
-      description: 'Nexa Mandiri Group adalah perusahaan konstruksi dan teknik terkemuka yang berdedikasi untuk mewujudkan visi menjadi kenyataan yang abadi. Dengan pengalaman puluhan tahun, tim ahli kami berspesialisasi dalam menyelesaikan proyek komersial, industri, dan infrastruktur berskala besar di seluruh wilayah. Kami didorong oleh komitmen terhadap keselamatan, inovasi, dan kualitas yang tak tertandingi.'
+      description: 'Nexa Mandiri Group adalah perusahaan konstruksi dan teknik terkemuka yang berdedikasi untuk mewujudkan visi menjadi kenyataan yang abadi. Kami mendampingi pemilik proyek sejak tahap perencanaan awal hingga penyelesaian proyek melalui perencanaan yang praktis, estimasi biaya, koordinasi pengadaan, dukungan supervisi, hingga pelaksanaan konstruksi.'
     },
     whyExists: {
       title: 'Mengapa Nexa Ada',
@@ -119,13 +119,17 @@ export const content = {
       ]
     },
     nexaWay: {
-      title: 'Cara Nexa (The Nexa Way)',
-      description: 'Bukan hanya tentang apa yang kami bangun, tetapi bagaimana kami membangunnya. "The Nexa Way" adalah filosofi operasional kami yang berpusat pada empat pilar utama:',
-      pillars: [
-        'Standar Keselamatan Tanpa Kompromi',
-        'Komunikasi yang Transparan',
-        'Praktik Konstruksi Berkelanjutan',
-        'Pengejaran Kualitas Tanpa Henti'
+      eyebrow: 'CARA NEXA (THE NEXA WAY)',
+      title: 'Proses yang jelas menghasilkan keputusan proyek yang lebih baik.',
+      steps: [
+        { title: 'DISCOVER', description: 'Tujuan, anggaran, jadwal' },
+        { title: 'DEFINE', description: 'Persyaratan, ruang lingkup, risiko' },
+        { title: 'PLAN', description: 'Gambar desain, rencana biaya, jadwal' },
+        { title: 'VALIDATE', description: 'Keterbangunan, kelayakan, risiko' },
+        { title: 'EXECUTE', description: 'Konstruksi, koordinasi kontraktor' },
+        { title: 'CONTROL', description: 'Biaya, jadwal, kualitas, keselamatan' },
+        { title: 'DELIVER', description: 'Pengujian, serah terima, penutupan' },
+        { title: 'SUPPORT', description: 'Garansi, pemeliharaan, pengembangan masa depan' }
       ]
     }
   },
@@ -138,11 +142,120 @@ export const content = {
   ] as Service[],
   projects: [
     {
-      id: 'project-1',
-      slug: 'proyek-pertama',
-      title: 'Proyek Pertama',
-      description: 'Deskripsi proyek pertama',
-      year: 2024
+      id: 'mustafa',
+      slug: 'mustafa',
+      title: 'Mustafa Retail Fit-Out – Lagoy Bay Mall',
+      description: 'Proyek konstruksi komersial yang memastikan standar kualitas tinggi dan eksekusi modern.',
+      category: 'Komersial',
+      image: '/images/projects/commercial/1.webp',
+      year: 2023,
+      budget: 'IDR 8,189,062,000',
+      client: 'Mustafa Retail Fit Out -Lagoi Bay Mall',
+      scopeOfService: ['Kontraktor Umum', 'Manajemen Proyek', 'Teknik Struktural'],
+      gallery: [
+        '/images/projects/commercial/mustafa/2.webp',
+        '/images/projects/commercial/mustafa/3.webp',
+        '/images/projects/commercial/mustafa/4.webp',
+        '/images/projects/commercial/mustafa/5.webp',
+        '/images/projects/commercial/mustafa/6.webp',
+        '/images/projects/commercial/mustafa/7.webp'
+      ]
+    },
+    {
+      id: 'clubmed',
+      slug: 'clubmed',
+      title: 'Club Med Aluminium Door & Window Works',
+      description: 'Pengembangan perhotelan mewah yang dirancang untuk memberikan pengalaman tamu yang luar biasa.',
+      category: 'Perhotelan',
+      image: '/images/projects/hospitality/1.webp',
+      year: 2022,
+      budget: 'IDR 10,820,421,798',
+      client: 'Club Med Alumunium Door & Window Works',
+      scopeOfService: ['Rancang-Bangun', 'Interior Fit-out', 'Lanskap'],
+      gallery: [
+        '/images/projects/hospitality/clubmed/IMG_0446.webp',
+        '/images/projects/hospitality/clubmed/IMG_0447.webp',
+        '/images/projects/hospitality/clubmed/IMG_0454.webp',
+        '/images/projects/hospitality/clubmed/IMG_0456.webp',
+        '/images/projects/hospitality/clubmed/IMG_0458.webp',
+        '/images/projects/hospitality/clubmed/IMG_0459.webp',
+        '/images/projects/hospitality/clubmed/IMG_0462.webp'
+      ]
+    },
+    {
+      id: 'hotel-indigo',
+      slug: 'hotel-indigo',
+      title: 'Hotel Indigo, Holiday Inn & Meatshop Bintan',
+      description: 'Konstruksi hotel premium yang memberikan daya tarik estetika dan daya tahan struktural.',
+      category: 'Perhotelan',
+      image: '/images/projects/hospitality/hotel indigo/1.webp',
+      year: 2023,
+      budget: 'IDR 14,893,646,297',
+      client: 'Hotel Indigo,Holiday Inn & Meatshop Bintan',
+      scopeOfService: ['Kontraktor Umum', 'Instalasi MEP', 'Jaminan Kualitas'],
+      gallery: [
+        '/images/projects/hospitality/hotel indigo/1.webp',
+        '/images/projects/hospitality/hotel indigo/IMG_0413.webp',
+        '/images/projects/hospitality/hotel indigo/IMG_0418.webp',
+        '/images/projects/hospitality/hotel indigo/IMG_0419.webp',
+        '/images/projects/hospitality/hotel indigo/IMG_0420.webp'
+      ]
+    },
+    {
+      id: 'weighbridge',
+      slug: 'weighbridge',
+      title: 'Weighbridge Foundation',
+      description: 'Infrastruktur industri tangguh yang dibangun untuk menangani tuntutan operasional tugas berat.',
+      category: 'Industri',
+      image: '/images/projects/industrial/1.webp',
+      year: 2024,
+      budget: 'IDR 181,500,000',
+      client: 'Weighbridge Foundation',
+      scopeOfService: ['Teknik Sipil', 'Fabrikasi Struktural', 'Instalasi Peralatan'],
+      gallery: [
+        '/images/projects/industrial/weighbridge/IMG_0384.webp',
+        '/images/projects/industrial/weighbridge/IMG_0385.webp',
+        '/images/projects/industrial/weighbridge/IMG_0386.webp',
+        '/images/projects/industrial/weighbridge/IMG_0387.webp'
+      ]
+    },
+    {
+      id: 'terminal-batu-ampar',
+      slug: 'terminal-batu-ampar',
+      title: 'Batu Ampar Terminal Entrance',
+      description: 'Pengembangan infrastruktur utama yang meningkatkan kapasitas logistik dan transportasi regional.',
+      category: 'Infrastruktur',
+      image: '/images/projects/infrastructure/1.webp',
+      year: 2021,
+      budget: 'IDR 6,080,457,005',
+      client: 'Pintu Masuk Terminal Batu Ampar',
+      scopeOfService: ['Pengembangan Infrastruktur', 'Pemancangan & Fondasi', 'Pekerjaan Beton'],
+      gallery: [
+        '/images/projects/infrastructure/terminalbatuampar/2.webp',
+        '/images/projects/infrastructure/terminalbatuampar/3.webp',
+        '/images/projects/infrastructure/terminalbatuampar/4.webp',
+        '/images/projects/infrastructure/terminalbatuampar/5.webp',
+        '/images/projects/infrastructure/terminalbatuampar/6.webp'
+      ]
+    },
+    {
+      id: 'alumina-school',
+      slug: 'alumina-school',
+      title: 'Alumina School – Bintan',
+      description: 'Fasilitas pendidikan modern yang dibangun untuk menyediakan lingkungan belajar yang aman dan inspiratif.',
+      category: 'Pendidikan',
+      image: '/images/projects/school/aluminaschool/1.webp',
+      year: 2023,
+      budget: 'IDR 3,293,779,088',
+      client: 'Alumina School Bintan',
+      scopeOfService: ['Rancang-Bangun', 'Instalasi MEP'],
+      gallery: [
+        '/images/projects/school/aluminaschool/1.webp',
+        '/images/projects/school/aluminaschool/2.webp',
+        '/images/projects/school/aluminaschool/3.webp',
+        '/images/projects/school/aluminaschool/4.webp',
+        '/images/projects/school/aluminaschool/5.webp'
+      ]
     }
   ] as Project[],
 }

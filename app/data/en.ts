@@ -58,7 +58,7 @@ export const content = {
     ]
   },
   cta: {
-    headline: 'Ready to build the future together?',
+    headline: 'Ready to build your next project?',
     statement: 'Contact us to discuss your project requirements and find out how we can help.',
     button: 'Get in Touch'
   },
@@ -90,7 +90,7 @@ export const content = {
     heroSubtitle: 'Practical expertise, from planning to execution.',
     whoWeAre: {
       title: 'Who We Are',
-      description: 'Nexa Mandiri Group is a premier construction and engineering firm dedicated to transforming visions into enduring realities. With decades of combined experience, our team of experts specializes in delivering large-scale commercial, industrial, and infrastructure projects across the region. We are driven by a commitment to safety, innovation, and unparalleled quality.'
+      description: 'Nexa Mandiri Group is a premier construction and engineering firm dedicated to transforming visions into enduring realities.We support owners from early planning through project completion by integrating practical planning, cost estimation, procurement coordination, supervision support, and construction execution.'
     },
     whyExists: {
       title: 'Why Nexa Exists',
@@ -101,31 +101,35 @@ export const content = {
       description: 'Our comprehensive suite of services covers every phase of the project lifecycle, from initial concept to final handover.',
       items: [
         {
-          title: 'General Contracting',
-          description: 'Comprehensive management of day-to-day oversight of construction sites, management of vendors and trades, and communication of information.'
+          title: 'Project Development & Consultancy',
+          description: 'We support project development from the early stages through needs assessment, planning, budget and cost estimation, BOQ and tender support, vendor evaluation, and value engineering.'
         },
         {
-          title: 'Design-Build',
-          description: 'A seamless, unified workflow from initial design concept through construction completion, ensuring faster delivery and cost efficiency.'
+          title: 'Project Management & Supervision',
+          description: 'We support project management through coordination, schedule and cost monitoring, progress reporting, quality and site supervision, and change and handover coordination.'
         },
         {
-          title: 'Project Management',
-          description: 'Strategic planning, risk management, and rigorous quality control to ensure projects are delivered on time and within budget.'
+          title: 'Construction & Fit Out ',
+          description: 'We deliver construction and renovation works, covering civil and architectural works, interior and fit-out, finishing, glass and aluminium works, and supporting infrastructure.'
         },
         {
-          title: 'Infrastructure Development',
-          description: 'Large-scale civil engineering projects including roads, bridges, and public utilities that form the backbone of modern society.'
+          title: 'Procurement & Material Supply',
+          description: 'We support procurement through construction material sourcing, supplier comparison, procurement coordination, vendor management, and project-based material supply.'
         }
       ]
     },
     nexaWay: {
-      title: 'The Nexa Way',
-      description: 'It is not just what we build, but how we build it. The Nexa Way is our operational philosophy centered around four core pillars:',
-      pillars: [
-        'Uncompromising Safety Standards',
-        'Transparent Communication',
-        'Sustainable Construction Practices',
-        'Relentless Pursuit of Quality'
+      eyebrow: 'THE NEXA WAY',
+      title: 'A clear process creates better project decisions.',
+      steps: [
+        { title: 'DISCOVER', description: 'Objectives, budget, timing' },
+        { title: 'DEFINE', description: 'Requirements, scope, risks' },
+        { title: 'PLAN', description: 'Drawings, cost plan, schedule' },
+        { title: 'VALIDATE', description: 'Buildability, feasibility, risks' },
+        { title: 'EXECUTE', description: 'Construction, contractor coordination' },
+        { title: 'CONTROL', description: 'Cost, schedule, quality, safety' },
+        { title: 'DELIVER', description: 'Testing, handover, close-out' },
+        { title: 'SUPPORT', description: 'Warranty, maintenance, future development' }
       ]
     }
   },
@@ -138,11 +142,120 @@ export const content = {
   ] as Service[],
   projects: [
     {
-      id: 'project-1',
-      slug: 'first-project',
-      title: 'First Project',
-      description: 'First project description',
-      year: 2024
+      id: 'mustafa',
+      slug: 'mustafa',
+      title: 'Mustafa Retail Fit-Out – Lagoy Bay Mall',
+      description: 'Commercial construction project ensuring high quality standards and modern execution.',
+      category: 'Commercial',
+      image: '/images/projects/commercial/1.webp',
+      year: 2023,
+      budget: 'IDR 8,189,062,000',
+      client: 'Mustafa Retail Fit Out -Lagoi Bay Mall',
+      scopeOfService: ['General Contracting', 'Project Management', 'Structural Engineering'],
+      gallery: [
+        '/images/projects/commercial/mustafa/2.webp',
+        '/images/projects/commercial/mustafa/3.webp',
+        '/images/projects/commercial/mustafa/4.webp',
+        '/images/projects/commercial/mustafa/5.webp',
+        '/images/projects/commercial/mustafa/6.webp',
+        '/images/projects/commercial/mustafa/7.webp'
+      ]
+    },
+    {
+      id: 'clubmed',
+      slug: 'clubmed',
+      title: 'Club Med Aluminium Door & Window Works',
+      description: 'Luxury hospitality development designed to deliver exceptional guest experiences.',
+      category: 'Hospitality',
+      image: '/images/projects/hospitality/1.webp',
+      year: 2022,
+      budget: 'IDR 10,820,421,798',
+      client: 'Club Med Alumunium Door & Window Works',
+      scopeOfService: ['Design-Build', 'Interior Fit-out', 'Landscaping'],
+      gallery: [
+        '/images/projects/hospitality/clubmed/IMG_0446.webp',
+        '/images/projects/hospitality/clubmed/IMG_0447.webp',
+        '/images/projects/hospitality/clubmed/IMG_0454.webp',
+        '/images/projects/hospitality/clubmed/IMG_0456.webp',
+        '/images/projects/hospitality/clubmed/IMG_0458.webp',
+        '/images/projects/hospitality/clubmed/IMG_0459.webp',
+        '/images/projects/hospitality/clubmed/IMG_0462.webp'
+      ]
+    },
+    {
+      id: 'hotel-indigo',
+      slug: 'hotel-indigo',
+      title: 'Hotel Indigo, Holiday Inn & Meatshop Bintan',
+      description: 'Premium hotel construction delivering aesthetic appeal and structural durability.',
+      category: 'Hospitality',
+      image: '/images/projects/hospitality/hotel indigo/1.webp',
+      year: 2023,
+      budget: 'IDR 14,893,646,297',
+      client: 'Hotel Indigo,Holiday Inn & Meatshop Bintan',
+      scopeOfService: ['General Contracting', 'MEP Installation', 'Quality Assurance'],
+      gallery: [
+        '/images/projects/hospitality/hotel indigo/1.webp',
+        '/images/projects/hospitality/hotel indigo/IMG_0413.webp',
+        '/images/projects/hospitality/hotel indigo/IMG_0418.webp',
+        '/images/projects/hospitality/hotel indigo/IMG_0419.webp',
+        '/images/projects/hospitality/hotel indigo/IMG_0420.webp'
+      ]
+    },
+    {
+      id: 'weighbridge',
+      slug: 'weighbridge',
+      title: 'Weighbridge Foundation',
+      description: 'Robust industrial infrastructure constructed to handle heavy-duty operational demands.',
+      category: 'Industrial',
+      image: '/images/projects/industrial/1.webp',
+      year: 2024,
+      budget: 'IDR 181,500,000',
+      client: 'Weighbridge Foundation',
+      scopeOfService: ['Civil Engineering', 'Structural Fabrication', 'Equipment Installation'],
+      gallery: [
+        '/images/projects/industrial/weighbridge/IMG_0384.webp',
+        '/images/projects/industrial/weighbridge/IMG_0385.webp',
+        '/images/projects/industrial/weighbridge/IMG_0386.webp',
+        '/images/projects/industrial/weighbridge/IMG_0387.webp'
+      ]
+    },
+    {
+      id: 'terminal-batu-ampar',
+      slug: 'terminal-batu-ampar',
+      title: 'Batu Ampar Terminal Entrance',
+      description: 'Major infrastructure development enhancing regional logistics and transportation capacity.',
+      category: 'Infrastructure',
+      image: '/images/projects/infrastructure/1.webp',
+      year: 2021,
+      budget: 'IDR 6,080,457,005',
+      client: 'Batu Ampar Terminal Entrance',
+      scopeOfService: ['Infrastructure Development', 'Piling & Foundation', 'Concrete Works'],
+      gallery: [
+        '/images/projects/infrastructure/terminalbatuampar/2.webp',
+        '/images/projects/infrastructure/terminalbatuampar/3.webp',
+        '/images/projects/infrastructure/terminalbatuampar/4.webp',
+        '/images/projects/infrastructure/terminalbatuampar/5.webp',
+        '/images/projects/infrastructure/terminalbatuampar/6.webp'
+      ]
+    },
+    {
+      id: 'alumina-school',
+      slug: 'alumina-school',
+      title: 'Alumina School – Bintan',
+      description: 'Modern educational facility built to provide a safe and inspiring learning environment.',
+      category: 'School',
+      image: '/images/projects/school/aluminaschool/1.webp',
+      year: 2023,
+      budget: 'IDR 3,293,779,088',
+      client: 'Alumina School Bintan',
+      scopeOfService: ['Design-Build', 'MEP Installation'],
+      gallery: [
+        '/images/projects/school/aluminaschool/1.webp',
+        '/images/projects/school/aluminaschool/2.webp',
+        '/images/projects/school/aluminaschool/3.webp',
+        '/images/projects/school/aluminaschool/4.webp',
+        '/images/projects/school/aluminaschool/5.webp'
+      ]
     }
   ] as Project[],
 }
