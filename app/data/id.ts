@@ -6,6 +6,14 @@ export const content = {
     name: 'Nexa Mandiri Group',
     description: 'Nexa Mandiri Group adalah perusahaan yang berfokus pada inovasi dan solusi.',
   },
+  nav: {
+    home: 'Beranda',
+    about: 'Tentang Kami',
+    projects: 'Proyek Kami',
+    contact: 'Hubungi Kami',
+    contactShort: 'Kontak',
+    language: 'Bahasa'
+  },
   hero: {
     headline: 'Partner Proyek Terpercaya, dari Perencanaan hingga Penyelesaian.',
     description: 'Nexa Mandiri Group adalah perusahaan yang berfokus pada inovasi dan solusi. Nexa Mandiri Group mendukung pemilik proyek melalui perencanaan praktis, estimasi biaya  dan pelaksanaan konstruksi.',
@@ -131,6 +139,41 @@ export const content = {
         { title: 'DELIVER', description: 'Pengujian, serah terima, penutupan' },
         { title: 'SUPPORT', description: 'Garansi, pemeliharaan, pengembangan masa depan' }
       ]
+    },
+    founder: {
+      title: 'Pendiri & Kepemimpinan Proyek',
+      headline: 'Penilaian langsung di seluruh perencanaan dan eksekusi.',
+      name: 'Herman Cahyadi',
+      paragraphs: [
+        'Herman memiliki pengalaman langsung dalam perencanaan konstruksi, estimasi, pengadaan, koordinasi, dan eksekusi proyek di Kepulauan Riau.',
+        'Pengalaman profesionalnya mencakup fasilitas pendidikan, kawasan industri, infrastruktur, perhotelan, ritel, pekerjaan struktural, serta paket pengerjaan aluminium dan kaca.',
+        'Ia mendirikan Nexa untuk menjembatani keputusan perencanaan dan eksekusi di lapangan melalui kepemimpinan proyek yang praktis dan transparan.'
+      ]
+    },
+    registration: {
+      title: 'Informasi Registrasi Perusahaan',
+      subtitle: 'Registrasi resmi dan detail korporat PT Nexa Mandiri Group.',
+      labels: {
+        name: 'Nama Terdaftar',
+        legalForm: 'Bentuk Hukum',
+        nib: 'NIB',
+        investment: 'Status Penanaman Modal',
+        domicile: 'Domisili Terdaftar',
+        established: 'Didirikan'
+      },
+      values: {
+        name: 'PT Nexa Mandiri Group',
+        legalForm: 'Perseroan Terbatas (PT)',
+        nib: '1905260072336',
+        investment: 'PMDN',
+        domicile: 'Kota Batam, Kepulauan Riau',
+        established: '2026'
+      },
+      card: {
+        title: 'Registrasi Perusahaan',
+        description: 'PT Nexa Mandiri Group adalah perseroan terbatas (PT) di Indonesia yang didirikan pada tahun 2026 dan terdaftar untuk menyediakan layanan konstruksi, konsultasi proyek, pasokan material, dan dukungan proyek terkait.',
+        footer: 'Berdasarkan catatan registrasi perusahaan yang tersedia.'
+      }
     }
   },
   services: [
@@ -140,6 +183,17 @@ export const content = {
       description: 'Deskripsi layanan 1'
     }
   ] as Service[],
+  projectsPage: {
+    title: 'Proyek Kami',
+    description: 'Jelajahi portofolio proyek rekayasa dan konstruksi kami yang mencakup berbagai industri. Kami bangga memberikan keunggulan, inovasi, dan keberlanjutan.',
+    noImage: 'Tidak Ada Gambar',
+    details: {
+      client: 'Klien',
+      year: 'Tahun',
+      budget: 'Anggaran',
+      scope: 'Cakupan Layanan'
+    }
+  },
   projects: [
     {
       id: 'mustafa',
@@ -148,7 +202,7 @@ export const content = {
       description: 'Proyek konstruksi komersial yang memastikan standar kualitas tinggi dan eksekusi modern.',
       category: 'Komersial',
       image: '/images/projects/commercial/1.webp',
-      year: 2023,
+      year: 2025,
       budget: 'IDR 8,189,062,000',
       client: 'Mustafa Retail Fit Out -Lagoi Bay Mall',
       scopeOfService: ['Kontraktor Umum', 'Manajemen Proyek', 'Teknik Struktural'],
@@ -168,7 +222,7 @@ export const content = {
       description: 'Pengembangan perhotelan mewah yang dirancang untuk memberikan pengalaman tamu yang luar biasa.',
       category: 'Perhotelan',
       image: '/images/projects/hospitality/1.webp',
-      year: 2022,
+      year: 2026,
       budget: 'IDR 10,820,421,798',
       client: 'Club Med Alumunium Door & Window Works',
       scopeOfService: ['Rancang-Bangun', 'Interior Fit-out', 'Lanskap'],
@@ -208,7 +262,7 @@ export const content = {
       description: 'Infrastruktur industri tangguh yang dibangun untuk menangani tuntutan operasional tugas berat.',
       category: 'Industri',
       image: '/images/projects/industrial/1.webp',
-      year: 2024,
+      year: 2019,
       budget: 'IDR 181,500,000',
       client: 'Weighbridge Foundation',
       scopeOfService: ['Teknik Sipil', 'Fabrikasi Struktural', 'Instalasi Peralatan'],
@@ -245,7 +299,7 @@ export const content = {
       description: 'Fasilitas pendidikan modern yang dibangun untuk menyediakan lingkungan belajar yang aman dan inspiratif.',
       category: 'Pendidikan',
       image: '/images/projects/school/aluminaschool/1.webp',
-      year: 2023,
+      year: 2019,
       budget: 'IDR 3,293,779,088',
       client: 'Alumina School Bintan',
       scopeOfService: ['Rancang-Bangun', 'Instalasi MEP'],

@@ -5,10 +5,10 @@
       <!-- Section Heading -->
       <div class="text-center max-w-3xl mx-auto mb-20 founder-heading">
         <h2 class="text-base md:text-lg font-bold uppercase tracking-widest text-blue-600 mb-4">
-          Founder & Project Leadership
+          {{ content.aboutPage.founder.title }}
         </h2>
         <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">
-          Hands-on judgement across planning and execution.
+          {{ content.aboutPage.founder.headline }}
         </h3>
       </div>
 
@@ -28,21 +28,15 @@
         <div class="lg:col-span-7 flex flex-col justify-center founder-content">
           <div class="max-w-2xl">
             <span class="block text-base md:text-lg font-bold uppercase tracking-widest text-blue-600 mb-4">
-              Founder & Managing Director
+              {{ content.aboutPage.founder.title }}
             </span>
             <h4 class="text-5xl md:text-6xl lg:text-7xl font-bold text-slate-900 mb-8 tracking-tight">
-              Herman Cahyadi
+              {{ content.aboutPage.founder.name }}
             </h4>
             
             <div class="space-y-6 text-lg text-slate-600 leading-relaxed">
-              <p>
-                Herman brings hands-on experience across construction planning, estimating, procurement, coordination, and project execution in the Riau Islands.
-              </p>
-              <p>
-                His professional exposure includes educational facilities, industrial works, infrastructure, hospitality developments, retail fit-outs, structural works, and aluminium and glazing packages.
-              </p>
-              <p>
-                He established Nexa to bridge planning decisions and on-site execution through practical, transparent project leadership.
+              <p v-for="(p, i) in content.aboutPage.founder.paragraphs" :key="i">
+                {{ p }}
               </p>
             </div>
           </div>
@@ -54,5 +48,5 @@
 </template>
 
 <script setup lang="ts">
-// Founder & Project Leadership component
+const { content } = useCompanyData()
 </script>

@@ -9,9 +9,9 @@
 
       <!-- Desktop Nav -->
       <nav class="hidden md:flex items-center space-x-8">
-        <NuxtLinkLocale to="/" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Home</NuxtLinkLocale>
-        <NuxtLinkLocale to="/about" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">About</NuxtLinkLocale>
-        <NuxtLinkLocale to="/projects" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Projects</NuxtLinkLocale>
+        <NuxtLinkLocale to="/" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">{{ content.nav.home }}</NuxtLinkLocale>
+        <NuxtLinkLocale to="/about" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">{{ content.nav.about }}</NuxtLinkLocale>
+        <NuxtLinkLocale to="/projects" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">{{ content.nav.projects }}</NuxtLinkLocale>
         
         <!-- Language Switcher -->
         <div class="relative group">
@@ -37,7 +37,7 @@
           </div>
         </div>
 
-        <NuxtLinkLocale to="/contact" class="px-6 py-2.5 bg-blue-600 text-white hover:bg-blue-700 rounded-lg font-semibold transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5 ml-4">Contact Us</NuxtLinkLocale>
+        <NuxtLinkLocale to="/contact" class="px-6 py-2.5 bg-blue-600 text-white hover:bg-blue-700 rounded-lg font-semibold transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5 ml-4">{{ content.nav.contact }}</NuxtLinkLocale>
       </nav>
 
       <!-- Mobile Menu Button -->
@@ -55,13 +55,13 @@
       class="md:hidden border-t bg-white absolute top-full left-0 w-full shadow-lg"
     >
       <nav class="flex flex-col px-4 py-4 space-y-4">
-        <NuxtLinkLocale to="/" @click="isMobileMenuOpen = false" class="text-slate-600 font-medium px-2 py-1">Home</NuxtLinkLocale>
-        <NuxtLinkLocale to="/about" @click="isMobileMenuOpen = false" class="text-slate-600 font-medium px-2 py-1">About</NuxtLinkLocale>
-        <NuxtLinkLocale to="/projects" @click="isMobileMenuOpen = false" class="text-slate-600 font-medium px-2 py-1">Projects</NuxtLinkLocale>
-        <NuxtLinkLocale to="/contact" @click="isMobileMenuOpen = false" class="text-slate-600 font-medium px-2 py-1">Contact</NuxtLinkLocale>
+        <NuxtLinkLocale to="/" @click="isMobileMenuOpen = false" class="text-slate-600 font-medium px-2 py-1">{{ content.nav.home }}</NuxtLinkLocale>
+        <NuxtLinkLocale to="/about" @click="isMobileMenuOpen = false" class="text-slate-600 font-medium px-2 py-1">{{ content.nav.about }}</NuxtLinkLocale>
+        <NuxtLinkLocale to="/projects" @click="isMobileMenuOpen = false" class="text-slate-600 font-medium px-2 py-1">{{ content.nav.projects }}</NuxtLinkLocale>
+        <NuxtLinkLocale to="/contact" @click="isMobileMenuOpen = false" class="text-slate-600 font-medium px-2 py-1">{{ content.nav.contactShort }}</NuxtLinkLocale>
         
         <div class="border-t pt-4 mt-2">
-          <p class="text-xs text-slate-400 mb-2 px-2 uppercase font-semibold">Language</p>
+          <p class="text-xs text-slate-400 mb-2 px-2 uppercase font-semibold">{{ content.nav.language }}</p>
           <div class="flex flex-wrap gap-2 px-2">
             <button 
               v-for="l in availableLocales" 

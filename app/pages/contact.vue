@@ -55,7 +55,7 @@
           
           <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-10 relative z-10">{{ content.contactPage.formTitle }}</h2>
           
-          <form action="https://formsubmit.co/delvintan38@gmail.com" method="POST" class="space-y-8 relative z-10">
+          <form action="https://formsubmit.co/nexamandirigroup@gmail.com" method="POST" class="space-y-8 relative z-10">
             <!-- Hidden configuration for FormSubmit -->
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_subject" value="New message from Nexa Mandiri website!">

@@ -28,12 +28,12 @@
             <div 
               v-for="(logo, index) in duplicatedLogos" 
               :key="`${n}-${index}`"
-              class="w-32 md:w-48 lg:w-64 flex-shrink-0  hover:grayscale-0 hover:opacity-100 transition-all duration-300 cursor-pointer flex justify-center items-center"
+              class="w-32 md:w-48 lg:w-64 flex-shrink-0   transition-all duration-300 cursor-pointer flex justify-center items-center"
             >
               <img 
                 :src="logo.src" 
                 :alt="logo.alt" 
-                class="w-full h-auto max-h-20 md:max-h-24 lg:max-h-32 object-contain" 
+                class="w-full h-auto max-h-20 md:max-h-24 lg:max-h-32 object-contain brightness-125" 
                 loading="lazy" 
               />
             </div>

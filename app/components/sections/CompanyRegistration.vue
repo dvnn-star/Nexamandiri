@@ -5,10 +5,10 @@
       <!-- Section Header -->
       <div class="text-center max-w-3xl mx-auto mb-16">
         <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4 tracking-tight">
-          Registered Company Information
+          {{ content.aboutPage.registration.title }}
         </h2>
         <p class="text-lg text-slate-600">
-          Official registration and corporate details of PT Nexa Mandiri Group.
+          {{ content.aboutPage.registration.subtitle }}
         </p>
       </div>
 
@@ -22,38 +22,38 @@
               
               <!-- Row 1 -->
               <div class="md:col-span-2 border-b border-slate-100 pb-4">
-                <span class="block text-xs font-bold uppercase tracking-wider text-red-600 mb-1">Registered Name</span>
-                <span class="block text-2xl md:text-3xl font-bold text-slate-900">PT Nexa Mandiri Group</span>
+                <span class="block text-xs font-bold uppercase tracking-wider text-red-600 mb-1">{{ content.aboutPage.registration.labels.name }}</span>
+                <span class="block text-2xl md:text-3xl font-bold text-slate-900">{{ content.aboutPage.registration.values.name }}</span>
               </div>
 
               <!-- Row 2 -->
               <div class="border-b md:border-b-0 border-slate-100 pb-4 md:pb-0">
-                <span class="block text-xs font-bold uppercase tracking-wider text-red-600 mb-1">Legal Form</span>
-                <span class="block text-xl md:text-2xl font-bold text-slate-900">Indonesian Limited Liability Company (PT)</span>
+                <span class="block text-xs font-bold uppercase tracking-wider text-red-600 mb-1">{{ content.aboutPage.registration.labels.legalForm }}</span>
+                <span class="block text-xl md:text-2xl font-bold text-slate-900">{{ content.aboutPage.registration.values.legalForm }}</span>
               </div>
 
               <!-- Row 3 -->
               <div class="border-b md:border-b-0 border-slate-100 pb-4 md:pb-0">
-                <span class="block text-xs font-bold uppercase tracking-wider text-red-600 mb-1">NIB</span>
-                <span class="block text-xl md:text-2xl font-bold text-slate-900">1905260072336</span>
+                <span class="block text-xs font-bold uppercase tracking-wider text-red-600 mb-1">{{ content.aboutPage.registration.labels.nib }}</span>
+                <span class="block text-xl md:text-2xl font-bold text-slate-900">{{ content.aboutPage.registration.values.nib }}</span>
               </div>
 
               <!-- Row 4 -->
               <div class="border-b border-slate-100 pb-4 md:pt-4">
-                <span class="block text-xs font-bold uppercase tracking-wider text-red-600 mb-1">Investment Status</span>
-                <span class="block text-xl md:text-2xl font-bold text-slate-900">PMDN</span>
+                <span class="block text-xs font-bold uppercase tracking-wider text-red-600 mb-1">{{ content.aboutPage.registration.labels.investment }}</span>
+                <span class="block text-xl md:text-2xl font-bold text-slate-900">{{ content.aboutPage.registration.values.investment }}</span>
               </div>
 
               <!-- Row 5 -->
               <div class="border-b border-slate-100 pb-4 md:pt-4">
-                <span class="block text-xs font-bold uppercase tracking-wider text-red-600 mb-1">Registered Domicile</span>
-                <span class="block text-xl md:text-2xl font-bold text-slate-900">Batam City, Riau Islands</span>
+                <span class="block text-xs font-bold uppercase tracking-wider text-red-600 mb-1">{{ content.aboutPage.registration.labels.domicile }}</span>
+                <span class="block text-xl md:text-2xl font-bold text-slate-900">{{ content.aboutPage.registration.values.domicile }}</span>
               </div>
 
               <!-- Row 6 -->
               <div class="md:col-span-2 pt-1 md:pt-4">
-                <span class="block text-xs font-bold uppercase tracking-wider text-red-600 mb-1">Established</span>
-                <span class="block text-xl md:text-2xl font-bold text-slate-900">2026</span>
+                <span class="block text-xs font-bold uppercase tracking-wider text-red-600 mb-1">{{ content.aboutPage.registration.labels.established }}</span>
+                <span class="block text-xl md:text-2xl font-bold text-slate-900">{{ content.aboutPage.registration.values.established }}</span>
               </div>
 
             </div>
@@ -69,16 +69,16 @@
               class="h-18 rounded-3xl w-full  mb-5" 
             />
             
-            <h3 class="text-2xl font-bold text-white mb-6">Corporate Registration</h3>
+            <h3 class="text-2xl font-bold text-white mb-6">{{ content.aboutPage.registration.card.title }}</h3>
             
             <p class="text-slate-300 leading-relaxed">
-              PT Nexa Mandiri Group is an Indonesian limited liability company established in 2026 and registered to provide construction, project consultancy, material supply, and related project support services.
+              {{ content.aboutPage.registration.card.description }}
             </p>
           </div>
           
           <div class="mt-12 pt-8 border-t border-slate-800">
             <p class="text-sm text-slate-400">
-              Based on the company's available registration records.
+              {{ content.aboutPage.registration.card.footer }}
             </p>
           </div>
         </div>
@@ -89,5 +89,5 @@
 </template>
 
 <script setup lang="ts">
-// Company registration section component
+const { content } = useCompanyData()
 </script>

@@ -21,7 +21,7 @@
             to="/projects" 
             class="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors group"
           >
-            Explore All Projects
+            {{ locale === 'id' ? 'Jelajahi Semua Proyek' : 'Explore All Projects' }}
             <ArrowRightIcon class="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </NuxtLinkLocale>
         </div>
@@ -57,11 +57,11 @@
             
             <div class="h-0 opacity-0 group-hover:h-auto group-hover:opacity-100 transition-all duration-500 ease-in-out overflow-hidden">
               <p class="text-slate-200 text-sm md:text-base leading-relaxed mb-4">
-                {{ captionMap[item.id] }}
+                {{ locale === 'id' ? captionMapID[item.id] : captionMapEN[item.id] }}
               </p>
               
               <div class="flex items-center gap-2 text-blue-300 font-medium">
-                <span>Explore Our Project</span>
+                <span>{{ locale === 'id' ? 'Jelajahi Proyek Kami' : 'Explore Our Project' }}</span>
                 <ArrowRightIcon class="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </div>
             </div>
@@ -77,11 +77,12 @@
 import { ref, onMounted } from 'vue'
 import { ArrowRightIcon } from 'lucide-vue-next'
 import { useCompanyData } from '~/composables/useCompanyData'
-import { useNuxtApp } from '#app'
+import { useNuxtApp, useI18n } from '#imports'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 const { content } = useCompanyData()
+const { locale } = useI18n()
 const industriesSection = ref<HTMLElement | null>(null)
 const { $gsap } = useNuxtApp()
 
@@ -94,13 +95,22 @@ const imageMap: Record<string, string> = {
   specialised: 'images/projects/specialized/1.webp'
 }
 
-const captionMap: Record<string, string> = {
+const captionMapEN: Record<string, string> = {
   hospitality: 'Delivering premium resorts and hospitality facilities with a focus on guest experience and architectural excellence.',
   industrial: 'Robust and efficient manufacturing plants designed for heavy-duty operations and scalability.',
   commercial: 'Modern retail and commercial spaces tailored to enhance business operations and customer engagement.',
   educational: 'Safe, sustainable, and inspiring learning environments built for the future of education.',
   infrastructure: 'Essential infrastructure and utility projects supporting regional growth and connectivity.',
   specialised: 'Custom construction packages requiring unique engineering solutions and precise execution.'
+}
+
+const captionMapID: Record<string, string> = {
+  hospitality: 'Menghadirkan resort dan fasilitas perhotelan premium dengan fokus pada pengalaman tamu dan keunggulan arsitektur.',
+  industrial: 'Pabrik manufaktur yang kuat dan efisien yang dirancang untuk operasi tugas berat dan skalabilitas.',
+  commercial: 'Ruang ritel dan komersial modern yang disesuaikan untuk meningkatkan operasi bisnis dan keterlibatan pelanggan.',
+  educational: 'Lingkungan belajar yang aman, berkelanjutan, dan inspiratif yang dibangun untuk masa depan pendidikan.',
+  infrastructure: 'Proyek infrastruktur dan utilitas penting yang mendukung pertumbuhan dan konektivitas regional.',
+  specialised: 'Paket konstruksi khusus yang membutuhkan solusi teknik unik dan eksekusi presisi.'
 }
 
 onMounted(() => {

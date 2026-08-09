@@ -6,6 +6,14 @@ export const content = {
     name: 'Nexa Mandiri Group',
     description: 'Nexa Mandiri Group is a company focused on innovation and solutions.',
   },
+  nav: {
+    home: 'Home',
+    about: 'About',
+    projects: 'Projects',
+    contact: 'Contact Us',
+    contactShort: 'Contact',
+    language: 'Language'
+  },
   hero: {
     headline: 'Reliable Project Partner from Planning to Completion.',
     description: 'Nexa Mandiri Group supports project owners through practical planning, cost estimation, procurement coordination, supervision support, and construction execution.',
@@ -131,6 +139,41 @@ export const content = {
         { title: 'DELIVER', description: 'Testing, handover, close-out' },
         { title: 'SUPPORT', description: 'Warranty, maintenance, future development' }
       ]
+    },
+    founder: {
+      title: 'Founder & Project Leadership',
+      headline: 'Hands-on judgement across planning and execution.',
+      name: 'Herman Cahyadi',
+      paragraphs: [
+        'Herman brings hands-on experience across construction planning, estimating, procurement, coordination, and project execution in the Riau Islands.',
+        'His professional exposure includes educational facilities, industrial works, infrastructure, hospitality developments, retail fit-outs, structural works, and aluminium and glazing packages.',
+        'He established Nexa to bridge planning decisions and on-site execution through practical, transparent project leadership.'
+      ]
+    },
+    registration: {
+      title: 'Registered Company Information',
+      subtitle: 'Official registration and corporate details of PT Nexa Mandiri Group.',
+      labels: {
+        name: 'Registered Name',
+        legalForm: 'Legal Form',
+        nib: 'NIB',
+        investment: 'Investment Status',
+        domicile: 'Registered Domicile',
+        established: 'Established'
+      },
+      values: {
+        name: 'PT Nexa Mandiri Group',
+        legalForm: 'Indonesian Limited Liability Company (PT)',
+        nib: '1905260072336',
+        investment: 'PMDN',
+        domicile: 'Batam City, Riau Islands',
+        established: '2026'
+      },
+      card: {
+        title: 'Corporate Registration',
+        description: 'PT Nexa Mandiri Group is an Indonesian limited liability company established in 2026 and registered to provide construction, project consultancy, material supply, and related project support services.',
+        footer: 'Based on the company\'s available registration records.'
+      }
     }
   },
   services: [
@@ -140,6 +183,17 @@ export const content = {
       description: 'Service 1 description'
     }
   ] as Service[],
+  projectsPage: {
+    title: 'Our Projects',
+    description: 'Explore our portfolio of engineering and construction projects spanning multiple industries. We pride ourselves on delivering excellence, innovation, and sustainability.',
+    noImage: 'No Image',
+    details: {
+      client: 'Client',
+      year: 'Year',
+      budget: 'Budget',
+      scope: 'Scope of Service'
+    }
+  },
   projects: [
     {
       id: 'mustafa',
@@ -148,7 +202,7 @@ export const content = {
       description: 'Commercial construction project ensuring high quality standards and modern execution.',
       category: 'Commercial',
       image: '/images/projects/commercial/1.webp',
-      year: 2023,
+      year: 2025,
       budget: 'IDR 8,189,062,000',
       client: 'Mustafa Retail Fit Out -Lagoi Bay Mall',
       scopeOfService: ['General Contracting', 'Project Management', 'Structural Engineering'],
@@ -168,7 +222,7 @@ export const content = {
       description: 'Luxury hospitality development designed to deliver exceptional guest experiences.',
       category: 'Hospitality',
       image: '/images/projects/hospitality/1.webp',
-      year: 2022,
+      year: 2026,
       budget: 'IDR 10,820,421,798',
       client: 'Club Med Alumunium Door & Window Works',
       scopeOfService: ['Design-Build', 'Interior Fit-out', 'Landscaping'],
@@ -208,7 +262,7 @@ export const content = {
       description: 'Robust industrial infrastructure constructed to handle heavy-duty operational demands.',
       category: 'Industrial',
       image: '/images/projects/industrial/1.webp',
-      year: 2024,
+      year: 2019,
       budget: 'IDR 181,500,000',
       client: 'Weighbridge Foundation',
       scopeOfService: ['Civil Engineering', 'Structural Fabrication', 'Equipment Installation'],
@@ -245,7 +299,7 @@ export const content = {
       description: 'Modern educational facility built to provide a safe and inspiring learning environment.',
       category: 'School',
       image: '/images/projects/school/aluminaschool/1.webp',
-      year: 2023,
+      year: 2019,
       budget: 'IDR 3,293,779,088',
       client: 'Alumina School Bintan',
       scopeOfService: ['Design-Build', 'MEP Installation'],

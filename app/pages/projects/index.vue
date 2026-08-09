@@ -3,10 +3,10 @@
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
       
       <!-- Header -->
-      <div class="mb-16 md:mb-24 proj-header">
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">Our Projects</h1>
+      <div class="mb-12 md:mb-20 proj-header">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">{{ content.projectsPage.title }}</h1>
         <p class="text-xl text-slate-600 max-w-3xl leading-relaxed">
-          Explore our portfolio of engineering and construction projects spanning multiple industries. We pride ourselves on delivering excellence, innovation, and sustainability.
+          {{ content.projectsPage.description }}
         </p>
       </div>
 
@@ -27,7 +27,7 @@
               class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
             />
             <div v-else class="w-full h-full bg-slate-200 flex items-center justify-center text-slate-400">
-              No Image
+              {{ content.projectsPage.noImage }}
             </div>
             
             <!-- Overlay -->
@@ -54,14 +54,14 @@
 
 <script setup lang="ts">
 import { useCompanyData } from '~/composables/useCompanyData'
-import { useHead } from '#imports'
+import { useHead, computed } from '#imports'
 
 const { content } = useCompanyData()
 
 useHead({
-  title: 'Projects | Nexa Mandiri Group',
+  title: computed(() => `${content.value.projectsPage.title} | Nexa Mandiri Group`),
   meta: [
-    { name: 'description', content: 'Explore our portfolio of engineering and construction projects across various industries.' }
+    { name: 'description', content: computed(() => content.value.projectsPage.description) }
   ]
 })
 </script>

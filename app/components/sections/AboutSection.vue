@@ -4,11 +4,11 @@
       <div class="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
         <!-- Text Content -->
         <div class="lg:w-1/2 about-content opacity-0 translate-y-8">
-     
+
           <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight mb-6">
             {{ content.about.subheading }}
           </h2>
-          
+
           <div class="space-y-6 text-lg text-slate-600">
             <p class="font-medium text-slate-800">
               {{ content.about.description }}
@@ -20,29 +20,26 @@
               {{ content.about.role }}
             </p>
           </div>
-          
+
           <div class="mt-10">
-            <NuxtLinkLocale 
-              to="/about" 
+            <NuxtLinkLocale to="/about"
               class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors group"
-            >
-              Learn More
+              v-if="$localeRoute">
+
+              {{ $i18n.locale === 'id' ? 'Pelajari Lebih Lanjut' : 'Learn More' }}
+
               <ArrowRightIcon class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </NuxtLinkLocale>
           </div>
         </div>
-        
+
         <!-- Image Graphic -->
         <div class="lg:w-1/2 w-full about-image opacity-0 translate-x-8">
           <div class="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-2xl">
             <div class="absolute inset-0 bg-blue-900/10 z-10 mix-blend-multiply"></div>
-            <img 
-              src="/about.avif" 
-              alt="Nexa Mandiri Construction Placeholder" 
-              class="w-full h-full object-cover"
-              loading="lazy"
-            />
-            
+            <img src="/about.avif" alt="Nexa Mandiri Construction Placeholder" class="w-full h-full object-cover"
+              loading="lazy" />
+
             <!-- Decorative badge -->
             <div class="absolute bottom-0 left-0 bg-white p-6 rounded-tr-2xl z-20">
               <div class="flex items-center gap-2">
@@ -51,7 +48,7 @@
                 </div>
                 <div>
                   <p class="font-bold text-slate-900">Batam, Indonesia</p>
-                </div>  
+                </div>
               </div>
             </div>
           </div>
@@ -76,9 +73,9 @@ const { $gsap } = useNuxtApp()
 onMounted(() => {
   const gsapInstance = $gsap || gsap
   gsapInstance.registerPlugin(ScrollTrigger)
-  
+
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  
+
   if (prefersReducedMotion) {
     gsapInstance.set('.about-content, .about-image', { opacity: 1, x: 0, y: 0 })
     return
@@ -95,7 +92,7 @@ onMounted(() => {
       duration: 1,
       ease: 'power3.out'
     })
-    
+
     gsapInstance.to('.about-image', {
       scrollTrigger: {
         trigger: aboutSection.value,

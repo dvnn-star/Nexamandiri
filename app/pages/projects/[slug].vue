@@ -3,9 +3,10 @@
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl mb-20">
       
       <!-- Back Button -->
-      <NuxtLinkLocale to="/projects" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium mb-8 transition-colors">
+      <NuxtLinkLocale to="/projects" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium mb-8 transition-colors" v-if="$localeRoute">
         <ArrowLeftIcon class="w-5 h-5 mr-2" />
-        Back to Projects
+        {{ $i18n.locale === 'id' ? 'Kembali ke Proyek' : 'Back to Projects' }}
+
       </NuxtLinkLocale>
 
       <div v-if="project" class="project-content">
@@ -50,19 +51,19 @@
             <table class="w-full text-left border-collapse">
               <tbody>
                 <tr class="border-b border-slate-200">
-                  <th class="py-5 px-6 md:px-8 text-sm font-bold text-slate-500 uppercase tracking-widest w-1/3 md:w-1/4 bg-slate-50/50">Client</th>
+                  <th class="py-5 px-6 md:px-8 text-sm font-bold text-slate-500 uppercase tracking-widest w-1/3 md:w-1/4 bg-slate-50/50">{{ content.projectsPage.details.client }}</th>
                   <td class="py-5 px-6 md:px-8 text-lg font-semibold text-slate-900">{{ project.client || 'Confidential' }}</td>
                 </tr>
                 <tr class="border-b border-slate-200">
-                  <th class="py-5 px-6 md:px-8 text-sm font-bold text-slate-500 uppercase tracking-widest w-1/3 md:w-1/4 bg-slate-50/50">Year</th>
+                  <th class="py-5 px-6 md:px-8 text-sm font-bold text-slate-500 uppercase tracking-widest w-1/3 md:w-1/4 bg-slate-50/50">{{ content.projectsPage.details.year }}</th>
                   <td class="py-5 px-6 md:px-8 text-lg font-semibold text-slate-900">{{ project.year || 'Ongoing' }}</td>
                 </tr>
                 <tr class="border-b border-slate-200">
-                  <th class="py-5 px-6 md:px-8 text-sm font-bold text-slate-500 uppercase tracking-widest w-1/3 md:w-1/4 bg-slate-50/50">Budget</th>
+                  <th class="py-5 px-6 md:px-8 text-sm font-bold text-slate-500 uppercase tracking-widest w-1/3 md:w-1/4 bg-slate-50/50">{{ content.projectsPage.details.budget }}</th>
                   <td class="py-5 px-6 md:px-8 text-lg font-semibold text-slate-900">{{ project.budget || 'Undisclosed' }}</td>
                 </tr>
                 <tr>
-                  <th class="py-5 px-6 md:px-8 text-sm font-bold text-slate-500 uppercase tracking-widest w-1/3 md:w-1/4 bg-slate-50/50 align-top">Scope of Service</th>
+                  <th class="py-5 px-6 md:px-8 text-sm font-bold text-slate-500 uppercase tracking-widest w-1/3 md:w-1/4 bg-slate-50/50 align-top">{{ content.projectsPage.details.scope }}</th>
                   <td class="py-5 px-6 md:px-8">
                     <ul v-if="project.scopeOfService && project.scopeOfService.length" class="text-slate-900 font-medium space-y-2">
                       <li v-for="scope in project.scopeOfService" :key="scope" class="flex items-start">

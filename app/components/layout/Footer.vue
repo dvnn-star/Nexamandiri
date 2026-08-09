@@ -20,10 +20,10 @@
         <div class="lg:col-span-3">
           <h3 class="text-lg font-semibold text-white mb-6 uppercase tracking-wider text-sm">{{ content.footer.quickLinks }}</h3>
           <ul class="space-y-4">
-            <li><NuxtLinkLocale to="/" class="hover:text-blue-400 transition-colors">Home</NuxtLinkLocale></li>
-            <li><NuxtLinkLocale to="/about" class="hover:text-blue-400 transition-colors">About Us</NuxtLinkLocale></li>
-            <li><NuxtLinkLocale to="/projects" class="hover:text-blue-400 transition-colors">Projects</NuxtLinkLocale></li>
-            <li><NuxtLinkLocale to="/contact" class="hover:text-blue-400 transition-colors">Contact</NuxtLinkLocale></li>
+            <li><NuxtLinkLocale to="/" class="hover:text-blue-400 transition-colors">{{ locale === 'id' ? 'Beranda' : 'Home' }}</NuxtLinkLocale></li>
+            <li><NuxtLinkLocale to="/about" class="hover:text-blue-400 transition-colors">{{ locale === 'id' ? 'Tentang Kami' : 'About Us' }}</NuxtLinkLocale></li>
+            <li><NuxtLinkLocale to="/projects" class="hover:text-blue-400 transition-colors">{{ locale === 'id' ? 'Proyek Kami' : 'Projects' }}</NuxtLinkLocale></li>
+            <li><NuxtLinkLocale to="/contact" class="hover:text-blue-400 transition-colors">{{ locale === 'id' ? 'Kontak' : 'Contact' }}</NuxtLinkLocale></li>
           </ul>
         </div>
         
@@ -54,8 +54,8 @@
           &copy; {{ new Date().getFullYear() }} {{ content.company.name }}. {{ content.footer.rights }}
         </div>
         <div class="flex items-center gap-6 text-sm text-slate-500">
-          <NuxtLinkLocale to="/" class="hover:text-slate-300 transition-colors">Privacy Policy</NuxtLinkLocale>
-          <NuxtLinkLocale to="/" class="hover:text-slate-300 transition-colors">Terms of Service</NuxtLinkLocale>
+          <NuxtLinkLocale to="/" class="hover:text-slate-300 transition-colors">{{ locale === 'id' ? 'Kebijakan Privasi' : 'Privacy Policy' }}</NuxtLinkLocale>
+          <NuxtLinkLocale to="/" class="hover:text-slate-300 transition-colors">{{ locale === 'id' ? 'Syarat & Ketentuan' : 'Terms of Service' }}</NuxtLinkLocale>
         </div>
       </div>
       
@@ -66,5 +66,8 @@
 <script setup lang="ts">
 import { MapPinIcon, MailIcon, PhoneIcon } from 'lucide-vue-next'
 import { useCompanyData } from '~/composables/useCompanyData'
+import { useI18n } from '#imports'
+
 const { content } = useCompanyData()
+const { locale } = useI18n()
 </script>
