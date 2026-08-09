@@ -37,7 +37,7 @@
           <div class="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-2xl">
             <div class="absolute inset-0 bg-blue-900/10 z-10 mix-blend-multiply"></div>
             <img 
-              src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=2000" 
+              src="/about.avif" 
               alt="Nexa Mandiri Construction Placeholder" 
               class="w-full h-full object-cover"
               loading="lazy"

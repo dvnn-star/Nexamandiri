@@ -5,6 +5,7 @@
       <slot />
     </main>
     <LayoutFooter />
+    <WhatsAppButton />
   </div>
 </template>
 

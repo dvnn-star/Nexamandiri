@@ -57,9 +57,7 @@
       <nav class="flex flex-col px-4 py-4 space-y-4">
         <NuxtLinkLocale to="/" @click="isMobileMenuOpen = false" class="text-slate-600 font-medium px-2 py-1">Home</NuxtLinkLocale>
         <NuxtLinkLocale to="/about" @click="isMobileMenuOpen = false" class="text-slate-600 font-medium px-2 py-1">About</NuxtLinkLocale>
-        <NuxtLinkLocale to="/services" @click="isMobileMenuOpen = false" class="text-slate-600 font-medium px-2 py-1">Services</NuxtLinkLocale>
         <NuxtLinkLocale to="/projects" @click="isMobileMenuOpen = false" class="text-slate-600 font-medium px-2 py-1">Projects</NuxtLinkLocale>
-        <NuxtLinkLocale to="/insights" @click="isMobileMenuOpen = false" class="text-slate-600 font-medium px-2 py-1">Insights</NuxtLinkLocale>
         <NuxtLinkLocale to="/contact" @click="isMobileMenuOpen = false" class="text-slate-600 font-medium px-2 py-1">Contact</NuxtLinkLocale>
         
         <div class="border-t pt-4 mt-2">

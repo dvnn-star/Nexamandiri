@@ -22,7 +22,6 @@
           <ul class="space-y-4">
             <li><NuxtLinkLocale to="/" class="hover:text-blue-400 transition-colors">Home</NuxtLinkLocale></li>
             <li><NuxtLinkLocale to="/about" class="hover:text-blue-400 transition-colors">About Us</NuxtLinkLocale></li>
-            <li><NuxtLinkLocale to="/services" class="hover:text-blue-400 transition-colors">Services</NuxtLinkLocale></li>
             <li><NuxtLinkLocale to="/projects" class="hover:text-blue-400 transition-colors">Projects</NuxtLinkLocale></li>
             <li><NuxtLinkLocale to="/contact" class="hover:text-blue-400 transition-colors">Contact</NuxtLinkLocale></li>
           </ul>

@@ -4,9 +4,9 @@
     <div class="absolute inset-0 z-0">
       <div class="absolute inset-0 bg-gradient-to-r from-slate-900/90 to-slate-900/40 z-10"></div>
       <img 
-        src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2070" 
+        src="/hero.webp" 
         alt="Nexa Mandiri Engineering Construction Placeholder" 
-        class="w-full h-full object-cover "
+        class="w-full h-full object-cover opacity-50"
         loading="eager"
       />
     </div>
