@@ -1,5 +1,5 @@
 <template>
-  <main class="bg-white min-h-screen pt-32 pb-20">
+  <main class="bg-white min-h-screen pt-10 pb-20">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
       
       <!-- Header -->

@@ -4,7 +4,7 @@
     <!-- Hero (Classic Enterprise) -->
     <section class="relative h-[40vh] min-h-[500px] flex items-center overflow-hidden">
       <div class="absolute inset-0">
-        <NuxtImg src="/images/projects/commercial/1.webp" class="w-full h-full object-cover hero-bg"
+        <NuxtImg src="/hero.webp" class="w-full h-full object-cover hero-bg"
           alt="Hero Background" />
         <div class="absolute inset-0 bg-slate-900/70"></div>
       </div>
@@ -85,7 +85,9 @@
         </div>
       </div>
     </section>
+    <SectionsFounderSection />
     <SectionsClientsSection />
+    <SectionsCompanyRegistration />
     <SectionsCtaSection />
   </main>
 </template>
@@ -183,6 +185,24 @@ onMounted(async () => {
       {
         scrollTrigger: { trigger: '.nexa-way-section', start: 'top 75%' },
         y: 0, opacity: 1, duration: 0.6, stagger: 0.1, ease: 'power3.out'
+      }
+    )
+
+    // Founder Section
+    gsapInstance.fromTo('.founder-section', 
+      { y: 32, opacity: 0 },
+      {
+        scrollTrigger: { trigger: '.founder-section', start: 'top 85%' },
+        y: 0, opacity: 1, duration: 0.8, ease: 'power3.out'
+      }
+    )
+
+    // Company Registration
+    gsapInstance.fromTo('.reg-section', 
+      { y: 32, opacity: 0 },
+      {
+        scrollTrigger: { trigger: '.reg-section', start: 'top 85%' },
+        y: 0, opacity: 1, duration: 0.8, ease: 'power3.out'
       }
     )
   }, mainRef.value)
