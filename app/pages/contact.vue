@@ -55,35 +55,38 @@
           
           <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-10 relative z-10">{{ content.contactPage.formTitle }}</h2>
           
-          <form @submit.prevent="submitForm" class="space-y-8 relative z-10">
+          <form action="https://formsubmit.co/delvintan38@gmail.com" method="POST" class="space-y-8 relative z-10">
+            <!-- Hidden configuration for FormSubmit -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="New message from Nexa Mandiri website!">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div class="space-y-3">
                 <label for="name" class="text-xs font-bold text-slate-500 uppercase tracking-widest">{{ content.contactPage.name }}</label>
-                <input type="text" id="name" class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:bg-white focus:ring-4 focus:ring-blue-100 focus:border-blue-600 outline-none transition-all text-slate-900 placeholder-slate-400" required placeholder="John Doe" />
+                <input type="text" id="name" name="name" class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:bg-white focus:ring-4 focus:ring-blue-100 focus:border-blue-600 outline-none transition-all text-slate-900 placeholder-slate-400" required placeholder="John Doe" />
               </div>
               <div class="space-y-3">
                 <label for="email" class="text-xs font-bold text-slate-500 uppercase tracking-widest">{{ content.contactPage.email }}</label>
-                <input type="email" id="email" class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:bg-white focus:ring-4 focus:ring-blue-100 focus:border-blue-600 outline-none transition-all text-slate-900 placeholder-slate-400" required placeholder="john@company.com" />
+                <input type="email" id="email" name="email" class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:bg-white focus:ring-4 focus:ring-blue-100 focus:border-blue-600 outline-none transition-all text-slate-900 placeholder-slate-400" required placeholder="john@company.com" />
               </div>
               
               <div class="space-y-3">
                 <label for="phone" class="text-xs font-bold text-slate-500 uppercase tracking-widest">{{ content.contactPage.phone }}</label>
-                <input type="tel" id="phone" class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:bg-white focus:ring-4 focus:ring-blue-100 focus:border-blue-600 outline-none transition-all text-slate-900 placeholder-slate-400" required placeholder="+62 811..." />
+                <input type="tel" id="phone" name="phone" class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:bg-white focus:ring-4 focus:ring-blue-100 focus:border-blue-600 outline-none transition-all text-slate-900 placeholder-slate-400" required placeholder="+62 811..." />
               </div>
               <div class="space-y-3">
                 <label for="country" class="text-xs font-bold text-slate-500 uppercase tracking-widest">{{ content.contactPage.country }}</label>
-                <input type="text" id="country" class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:bg-white focus:ring-4 focus:ring-blue-100 focus:border-blue-600 outline-none transition-all text-slate-900 placeholder-slate-400" required placeholder="Indonesia" />
+                <input type="text" id="country" name="country" class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:bg-white focus:ring-4 focus:ring-blue-100 focus:border-blue-600 outline-none transition-all text-slate-900 placeholder-slate-400" required placeholder="Indonesia" />
               </div>
             </div>
             
             <div class="space-y-3">
               <label for="subject" class="text-xs font-bold text-slate-500 uppercase tracking-widest">{{ content.contactPage.subject }}</label>
-              <input type="text" id="subject" class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:bg-white focus:ring-4 focus:ring-blue-100 focus:border-blue-600 outline-none transition-all text-slate-900 placeholder-slate-400" required placeholder="Project Inquiry" />
+              <input type="text" id="subject" name="subject" class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:bg-white focus:ring-4 focus:ring-blue-100 focus:border-blue-600 outline-none transition-all text-slate-900 placeholder-slate-400" required placeholder="Project Inquiry" />
             </div>
             
             <div class="space-y-3">
               <label for="message" class="text-xs font-bold text-slate-500 uppercase tracking-widest">{{ content.contactPage.message }}</label>
-              <textarea id="message" rows="5" class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:bg-white focus:ring-4 focus:ring-blue-100 focus:border-blue-600 outline-none transition-all resize-none text-slate-900 placeholder-slate-400" required placeholder="Tell us about your project requirements..."></textarea>
+              <textarea id="message" name="message" rows="5" class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:bg-white focus:ring-4 focus:ring-blue-100 focus:border-blue-600 outline-none transition-all resize-none text-slate-900 placeholder-slate-400" required placeholder="Tell us about your project requirements..."></textarea>
             </div>
             
             <div class="pt-4">
@@ -102,7 +105,6 @@
 
 <script setup lang="ts">
 import { MapPinIcon, MailIcon, PhoneIcon, SendIcon } from 'lucide-vue-next'
-import { useCompanyData } from '~/composables/useCompanyData'
 import { useHead } from '#imports'
 
 const { content } = useCompanyData()
@@ -114,7 +116,5 @@ useHead({
   ]
 })
 
-const submitForm = () => {
-  alert('Thank you for your message. Our team will get back to you shortly!')
-}
+
 </script>

@@ -67,8 +67,8 @@ export const content = {
     quickLinks: 'Tautan Cepat',
     contact: 'Hubungi Kami',
     address: 'Batam, Kepulauan Riau, Indonesia',
-    email: 'info@nexamandiri.com',
-    phone: '+62 811 777 888',
+    email: 'nexamandirigroup@gmail.com',
+    phone: '6285121538265',
     rights: 'Hak cipta dilindungi undang-undang.'
   },
   contactPage: {

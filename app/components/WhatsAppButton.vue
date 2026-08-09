@@ -29,8 +29,18 @@ import { useCompanyData } from '~/composables/useCompanyData'
 const { content } = useCompanyData()
 
 const whatsappLink = computed(() => {
-  // Extract only numbers from the phone string (e.g., +62 811 777 888 -> 62811777888)
-  const phoneNumber = content.value.footer.phone.replace(/\D/g, '')
-  return `https://wa.me/${phoneNumber}`
+  const phone = content.value.footer.phone
+
+  let phoneNumber = phone.replace(/\D/g, '')
+
+  if (phoneNumber.startsWith('0')) {
+    phoneNumber = `62${phoneNumber.slice(1)}`
+  }
+
+  const message = encodeURIComponent(
+    'Hello, I would like to discuss a project with Nexa Mandiri Group.'
+  )
+
+  return `https://wa.me/${phoneNumber}?text=${message}`
 })
 </script>

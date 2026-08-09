@@ -67,8 +67,8 @@ export const content = {
     quickLinks: 'Quick Links',
     contact: 'Contact Us',
     address: 'Batam, Riau Islands, Indonesia',
-    email: 'info@nexamandiri.com',
-    phone: '+62 811 777 888',
+    email: 'nexamandirigroup@gmail.com',
+    phone: '6285121538265',
     rights: 'All rights reserved.'
   },
   contactPage: {

@@ -95,7 +95,6 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted, nextTick } from 'vue'
 import { BriefcaseIcon, CheckCircle2Icon } from 'lucide-vue-next'
-import { useCompanyData } from '~/composables/useCompanyData'
 import { useHead, useNuxtApp } from '#imports'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'

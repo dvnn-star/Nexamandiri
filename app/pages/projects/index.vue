@@ -61,7 +61,7 @@ const { content } = useCompanyData()
 useHead({
   title: 'Projects | Nexa Mandiri Group',
   meta: [
-    { name: 'description', content: 'Explore our comprehensive portfolio of engineering and construction projects across various industries.' }
+    { name: 'description', content: 'Explore our portfolio of engineering and construction projects across various industries.' }
   ]
 })
 </script>

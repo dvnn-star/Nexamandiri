@@ -37,5 +37,9 @@ export default defineNuxtConfig({
   },
   image: {
     format: ['webp'],
+  }, 
+  ogImage: {
+    // Hanya aktif saat build produksi
+    enabled: process.env.NODE_ENV === 'production'
   }
 })
