@@ -95,7 +95,7 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted, nextTick } from 'vue'
 import { BriefcaseIcon, CheckCircle2Icon } from 'lucide-vue-next'
-import { useHead, useNuxtApp } from '#imports'
+import { useHead, useNuxtApp, useSeoMeta } from '#imports'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
@@ -104,11 +104,12 @@ const { $gsap } = useNuxtApp()
 const mainRef = ref<HTMLElement | null>(null)
 let ctx: gsap.Context
 
-useHead({
-  title: 'About Us | Nexa Mandiri Group',
-  meta: [
-    { name: 'description', content: 'Learn about Nexa Mandiri Group, our core services, and our philosophy.' }
-  ]
+useSeoMeta({
+  title: () => content.value.seo.about.title,
+  ogTitle: () => content.value.seo.about.title,
+  description: () => content.value.seo.about.description,
+  ogDescription: () => content.value.seo.about.description,
+  ogImage: '/Logo.webp',
 })
 
 onMounted(async () => {

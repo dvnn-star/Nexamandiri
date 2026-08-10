@@ -105,16 +105,15 @@
 
 <script setup lang="ts">
 import { MapPinIcon, MailIcon, PhoneIcon, SendIcon } from 'lucide-vue-next'
-import { useHead } from '#imports'
+import { useSeoMeta } from '#imports'
 
 const { content } = useCompanyData()
 
-useHead({
-  title: 'Contact Us | Nexa Mandiri Group',
-  meta: [
-    { name: 'description', content: 'Get in touch with Nexa Mandiri Group. We are ready to assist you with your project requirements.' }
-  ]
+useSeoMeta({
+  title: () => content.value.seo.contact.title,
+  ogTitle: () => content.value.seo.contact.title,
+  description: () => content.value.seo.contact.description,
+  ogDescription: () => content.value.seo.contact.description,
+  ogImage: '/Logo.webp',
 })
-
-
 </script>
