@@ -4,7 +4,7 @@ import type { Service } from '../types/service'
 export const content = {
   seo: {
     index: {
-      title: 'Construction Company & General Contractor in Batam | PT Nexa Mandiri Group',
+      title: 'Construction Company & General Contractor in Batam ',
       description: 'Nexa Mandiri Group is a trusted Construction Company and General Contractor in Batam, providing construction, planning, and cost estimation services.'
     },
     about: {
@@ -12,7 +12,7 @@ export const content = {
       description: 'Learn more about PT Nexa Mandiri Group, a dedicated Construction Company and General Contractor in Batam delivering high-quality projects.'
     },
     contact: {
-      title: 'Contact Us | General Contractor Batam | Nexa Mandiri Group',
+      title: 'Contact Us | General Contractor Batam ',
       description: 'Get in touch with Nexa Mandiri Group, a leading Construction Company and General Contractor in Batam. We are ready to assist with your project needs.'
     }
   },

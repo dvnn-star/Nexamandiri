@@ -4,7 +4,7 @@ import type { Service } from '../types/service'
 export const content = {
   seo: {
     index: {
-      title: 'Perusahaan Konstruksi & Kontraktor Umum di Batam | PT Nexa Mandiri Group',
+      title: 'Perusahaan Konstruksi & Kontraktor Umum di Batam ',
       description: 'Nexa Mandiri Group adalah Perusahaan Konstruksi dan Kontraktor Umum terpercaya di Batam. Kami melayani jasa konstruksi fisik, perencanaan, hingga estimasi biaya.'
     },
     about: {
@@ -12,7 +12,7 @@ export const content = {
       description: 'Pelajari lebih lanjut mengenai PT Nexa Mandiri Group, Perusahaan Konstruksi dan Kontraktor Umum di Batam yang berdedikasi membangun proyek berkualitas.'
     },
     contact: {
-      title: 'Hubungi Kami | Kontraktor Umum Batam | Nexa Mandiri Group',
+      title: 'Hubungi Kami | Kontraktor Umum Batam ',
       description: 'Hubungi Nexa Mandiri Group, Perusahaan Konstruksi dan Kontraktor Umum terkemuka di Batam. Kami siap membantu merealisasikan kebutuhan proyek Anda.'
     }
   },
