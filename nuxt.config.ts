@@ -30,7 +30,7 @@ export default defineNuxtConfig({
   },
   css: ['~/assets/css/main.css'],
   site: {
-    url: process.env.NUXT_SITE_URL || 'https://nexamandirigroup.com',
+    url: process.env.NUXT_SITE_URL || 'https://www.nexamandirigroup.com',
     name: 'PT Nexa Mandiri Group',
     description: 'PT Nexa Mandiri Group adalah Perusahaan Konstruksi & Kontraktor Umum terkemuka di Batam, Kepulauan Riau.',
     defaultLocale: 'id',

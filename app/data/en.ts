@@ -39,7 +39,7 @@ export const content = {
     subheading: 'One partner across planning and delivery.',
     description: 'PT Nexa Mandiri Group is a project development and construction solutions company based in Batam, Indonesia.',
     details: 'We support owners from early planning through completion by integrating practical planning, cost estimation, procurement coordination, supervision support, and construction execution.',
-    role: 'Our role adapts to each project—whether as consultant, owner representative, construction partner, or design-and-build partner—while providing a clear, measurable, and collaborative route to completion. We stand on the owner\'s side.'
+    role: 'Our role adapts to each project whether as consultant, owner representative, construction partner, or design-and-build partner while providing a clear, measurable, and collaborative route to completion. We stand on the owner\'s side.'
   },
   why: {
     label: 'WHY NEXA EXISTS',
@@ -55,9 +55,10 @@ export const content = {
     response: 'Our answer is practical knowledge, transparent cost communication, responsible coordination, and execution that can be monitored, documented, and held accountable.'
   },
   industries: {
-    label: 'OUR PROJECTS',
+    label: 'Selected Professional Experience',
     headline: 'Cross-sector experience, applied with practical project judgment.',
     statement: 'Professional exposure across multiple sectors supports practical technical and commercial judgment for each development.',
+    statement2: 'Selected projects delivered through the professional experience of Nexa’s founder and project team. Projects completed prior to the establishment of PT Nexa Mandiri Group are presented as professional experience and do not represent direct Nexa contracts unless otherwise stated.',
     items: [
       { id: 'hospitality', name: 'Hospitality & Resorts' },
       { id: 'industrial', name: 'Industrial & Manufacturing' },
@@ -68,8 +69,9 @@ export const content = {
     ]
   },
   clients: {
-    label: 'OUR CLIENTS',
-    headline: 'Trusted by industry leaders across multiple sectors.',
+    label: 'CLIENTS',
+    headline: 'Experience Across Leading Organizations', 
+    subline:'Organizations and developments associated with the professional project experience of our founder and project team. Display does not necessarily indicate a direct contractual relationship with PT Nexa Mandiri Group.',
     items: [
       { id: 'client-1', name: 'Global Manufacturing Co.' },
       { id: 'client-2', name: 'Pacific Resorts' },

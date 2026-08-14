@@ -39,7 +39,7 @@ export const content = {
     subheading: 'Satu mitra di seluruh tahap perencanaan dan pengiriman.',
     description: 'PT Nexa Mandiri Group adalah perusahaan solusi pengembangan dan konstruksi proyek yang berbasis di Batam, Indonesia.',
     details: 'Kami mendukung pemilik proyek dari perencanaan awal hingga penyelesaian dengan mengintegrasikan perencanaan praktis, estimasi biaya, koordinasi pengadaan, dukungan pengawasan, dan pelaksanaan konstruksi.',
-    role: 'Peran kami beradaptasi pada setiap proyek—baik sebagai konsultan, perwakilan pemilik, mitra konstruksi, atau mitra desain-dan-bangun—sambil memberikan rute penyelesaian yang jelas, terukur, dan kolaboratif. Kami selalu berdiri di pihak pemilik.'
+    role: 'Peran kami beradaptasi pada setiap proyek baik sebagai konsultan, perwakilan pemilik, mitra konstruksi, atau mitra desain dan bangun sambil memberikan rute penyelesaian yang jelas, terukur, dan kolaboratif. Kami selalu berdiri di pihak pemilik.'
   },
   why: {
     label: 'MENGAPA NEXA ADA',
@@ -55,9 +55,10 @@ export const content = {
     response: 'Jawaban kami adalah pengetahuan praktis, komunikasi biaya yang transparan, koordinasi yang bertanggung jawab, dan eksekusi yang dapat dipantau, didokumentasikan, dan dipertanggungjawabkan.'
   },
   industries: {
-    label: 'PROJECT KAMI',
+    label: 'Pengalaman Profesional Utama',
     headline: 'Pengalaman lintas sektor, diterapkan dengan pertimbangan proyek yang praktis.',
     statement: 'Pengalaman profesional di berbagai sektor mendukung pertimbangan teknis dan komersial yang praktis dalam setiap pengembangan proyek.',
+    statement2: 'Proyek-proyek yang dipilih telah diselesaikan melalui pengalaman profesional pendiri dan tim proyek Nexa. Proyek-proyek yang diselesaikan sebelum pendirian PT Nexa Mandiri Group ditampilkan sebagai pengalaman profesional dan tidak mewakili kontrak Nexa langsung kecuali dinyatakan lain.',
     items: [
       { id: 'hospitality', name: 'Perhotelan & Resort' },
       { id: 'industrial', name: 'Industri & Manufaktur' },
@@ -68,8 +69,9 @@ export const content = {
     ]
   },
   clients: {
-    label: 'KLIEN KAMI',
-    headline: 'Dipercaya oleh para pemimpin industri di berbagai sektor.',
+    label: 'KLIEN ',
+    headline: 'Pengalaman Bersama Organisasi Terkemuka',
+    subline: 'Organisasi dan pengembangan yang terkait dengan pengalaman proyek profesional pendiri dan tim proyek kami. Pencamtuman  ini tidak selalu menunjukkan hubungan kontraktual langsung dengan PT Nexa Mandiri Group.',
     items: [
       { id: 'client-1', name: 'Global Manufacturing Co.' },
       { id: 'client-2', name: 'Pacific Resorts' },

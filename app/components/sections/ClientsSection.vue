@@ -10,6 +10,9 @@
         <h2 class="text-2xl md:text-3xl font-semibold text-slate-800">
           {{ content.clients.headline }}
         </h2>
+        <p class="text-sm md:text-base text-slate-700 italic max-w-2xl mt-4 border-l-4 border-blue-200 pl-4">
+          {{ content.clients.subline }}
+        </p>
       </div>
 
       <!-- Marquee Carousel -->
