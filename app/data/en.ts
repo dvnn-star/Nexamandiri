@@ -200,7 +200,7 @@ export const content = {
     }
   ] as Service[],
   projectsPage: {
-    title: 'Our Projects',
+    title: 'Selected Professional Experience',
     description: 'Explore our portfolio of engineering and construction projects spanning multiple industries. We pride ourselves on delivering excellence, innovation, and sustainability.',
     noImage: 'No Image',
     details: {

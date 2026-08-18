@@ -200,7 +200,7 @@ export const content = {
     }
   ] as Service[],
   projectsPage: {
-    title: 'Proyek Kami',
+    title: 'Pengalaman Profesional',
     description: 'Jelajahi portofolio proyek rekayasa dan konstruksi kami yang mencakup berbagai industri. Kami bangga memberikan keunggulan, inovasi, dan keberlanjutan.',
     noImage: 'Tidak Ada Gambar',
     details: {
