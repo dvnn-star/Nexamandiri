@@ -15,7 +15,7 @@
         <NuxtLink 
           v-for="project in content.projects" 
           :key="project.id"
-          :to="`/projects/${project.slug}`"
+          :to="$localePath(`/projects/${project.slug}`)"
           class="group block relative rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 bg-slate-50 project-card w-full"
         >
           <!-- Image Wrapper -->

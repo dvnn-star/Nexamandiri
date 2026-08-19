@@ -29,7 +29,7 @@
         <!-- CTAs -->
         <div class="flex flex-col sm:flex-row gap-4">
           <NuxtLink 
-            to="/contact" 
+            :to="$localePath('/contact')" 
             class="inline-flex justify-center items-center px-8 py-4 text-base font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors duration-300 group"
           >
             {{ content.hero.primaryCta }}
@@ -37,7 +37,7 @@
           </NuxtLink>
           
           <NuxtLink 
-            to="/projects" 
+            :to="$localePath('/projects')" 
             class="inline-flex justify-center items-center px-8 py-4 text-base font-semibold text-white bg-slate-800/80 hover:bg-slate-700/80 backdrop-blur-sm border border-slate-700 rounded-lg transition-colors duration-300"
           >
             {{ content.hero.secondaryCta }}
